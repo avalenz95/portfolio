@@ -10,7 +10,10 @@ function Badge(props) {
                 <span className="icon">
                     <img className="is-rounded" src={`${process.env.PUBLIC_URL}${location}`} alt={alt}/>
                 </span>
-                <span>{name}</span>
+
+                {/* Render only if name exists */}
+                {name ? <span>{name}</span> : ''}
+
             </a>
         </p>
     )

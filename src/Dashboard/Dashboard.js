@@ -13,8 +13,16 @@ function Dashboard() {
                     <Panel/>
                 </div>
             </div>
+
+            <div className="columns">
+                <div className="column is-full">
+                    <Panel/>
+                </div>
+            </div>
+
         </div>
     )
 }
+
 
 export default Dashboard

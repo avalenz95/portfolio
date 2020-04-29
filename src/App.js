@@ -1,14 +1,11 @@
 import React from 'react';
-import './App.css';
+import './App.sass';
+import Dashboard from './Dashboard/Dashboard.js';
 
 function App() {
   return (
     <div className="App">
-
-<button class="button is-large is-warning">
-              Large button
-            </button>
- 
+      <Dashboard/>
     </div>
   );
 }

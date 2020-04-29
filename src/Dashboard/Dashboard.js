@@ -11,7 +11,8 @@ function Dashboard() {
                 <div className="column is-one-quarter">
                     <Panel 
                         title="About Me"
-                        bgColor = 'rgb(255, 0, 255)'
+                        bgColor = 'rgb(251,136,105)'
+                        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                     />
                 </div>
 
@@ -19,6 +20,8 @@ function Dashboard() {
                 <div className="column is-three-quarters">
                     <Panel 
                         title="Projects"
+                        bgColor = 'rgb(105,251,136)'
+                        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                     />
                 </div>
             </div>
@@ -28,6 +31,8 @@ function Dashboard() {
                 <div className="column is-full">
                     <Panel 
                         title="Articles"
+                        bgColor = 'rgb(105,220,251)'
+                        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                     />
                 </div>
             </div>

@@ -7,11 +7,13 @@ function Panel(props) {
     const style = {
         box: {
           height: '100%',
-          backgroundColor: bgColor
+          backgroundColor: bgColor,
+          color: 'white',
         },
 
         title: {
             fontSize: '30px',
+            color: 'white',
         },
 
       }
@@ -19,10 +21,8 @@ function Panel(props) {
 
     return (
         <div className="box is-fullwidth" style={style.box}>
-            <h1 style={style.title}> {title} </h1>
-            <p>{description}</p>
-          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+            <h1 className="title" style={style.title}> {title} </h1>
+            {description}
         </div>
 
     )

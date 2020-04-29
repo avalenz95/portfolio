@@ -6,17 +6,29 @@ function Dashboard() {
     return (
         <div className="Dashboard container">
             <div className="columns">
+
+                {/* About Me */}
                 <div className="column is-one-quarter">
-                    <Panel/>
+                    <Panel 
+                        title="About Me"
+                        bgColor = 'rgb(255, 0, 255)'
+                    />
                 </div>
+
+                {/* Projects */}
                 <div className="column is-three-quarters">
-                    <Panel/>
+                    <Panel 
+                        title="Projects"
+                    />
                 </div>
             </div>
 
+            {/* Articles */}
             <div className="columns">
                 <div className="column is-full">
-                    <Panel/>
+                    <Panel 
+                        title="Articles"
+                    />
                 </div>
             </div>
 

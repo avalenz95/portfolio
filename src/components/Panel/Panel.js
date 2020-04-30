@@ -1,4 +1,5 @@
 import React from 'react'
+import './Panel.css'
 
 //Represents a panel block on dashboard (about me, projects, articles)
 function Panel(props) {
@@ -36,14 +37,19 @@ function Panel(props) {
 
     return (
         <div className="panel" style={style.panel}>
+
             <div className="box" style={style.box}>
+
                 <div className="desc" style={style.desc}>
                     <p>{description}</p>
                 </div>
+
                 <div className="title" style={style.title}>
                     <h1> {title} </h1>
                 </div>
+
             </div>
+
         </div>
 
     )

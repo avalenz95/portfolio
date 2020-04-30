@@ -34,7 +34,7 @@ h1:after {
     width: 0; 
 }
 
-h1:hover:after { 
+.panel:hover h1:after { 
     width: 100%; 
     left: 0; 
 }

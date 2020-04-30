@@ -1,7 +1,8 @@
 import React from 'react'
-
+// eslint-disable-next-line no-lone-blocks
+{/* FIGURE OUT HOW TO CHANGE SVG COLOR maybe create css file? */}
 function Badge(props) {
-    {/*FIGURE OUT HOW TO CHANGE SVG COLOR maybe create css file?*/}
+
     const { name, location, alt, href} = props
 
     return (

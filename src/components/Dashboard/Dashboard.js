@@ -11,8 +11,9 @@ function Dashboard() {
                 <div className="column is-one-quarter">
                     <Panel 
                         title="About Me"
-                        bgColor = 'rgb(251,136,105)'
+                        bgColor = 'rgb(251,136,105,.5)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
+                        image = {`${process.env.PUBLIC_URL}/images/me.jpeg`}
                     />
                 </div>
 

@@ -7,11 +7,8 @@ import Nav from './components/Nav/Nav.js'
 function App() {
   return (
     <div className="App">
-      <div>
         <Nav />
         <Dashboard />
-      </div>
-      
         <Footer />
     </div>
   );

@@ -24,7 +24,6 @@ function Panel(props) {
         title: {
             fontSize: '30px',
             color: 'white',
-            textDecoration: 'underline',
 
         },
 
@@ -44,7 +43,7 @@ function Panel(props) {
                     <p>{description}</p>
                 </div>
 
-                <div className="title" style={style.title}>
+                <div className="title" id="title" style={style.title}>
                     <h1> {title} </h1>
                 </div>
 

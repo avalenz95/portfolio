@@ -37,8 +37,7 @@ function Panel(props) {
 
     //Child change view values and pass to parent
     function handleView(event) {
-        console.log("here")
-        event.target.values = {showView: true, viewName: viewName}
+        event.target.values = {showView: true, viewName: viewName, bgColor: bgColor}
         props.onChange(event.target.values);
     }
 

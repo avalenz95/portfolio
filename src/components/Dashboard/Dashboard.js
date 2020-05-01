@@ -6,14 +6,17 @@ import Articles from '../Articles/Articles.js'
 
 //Represents homepage grid
 function Dashboard() {
+
     // set view states
-    const[values, setValue] = useState({showView: false, viewName: ""})
-    console.log(values)
+    const[values, setValue] = useState({
+        showView: false, 
+        viewName: "",
+        bgColor: "",
+    })
     
     //Handle changing the view values
     function handleView(newValues) {
         setValue(newValues)
-        console.log(newValues)
     }
 
     //Default Dashboard
@@ -67,13 +70,13 @@ function Dashboard() {
         )
     //Expand Views
     } else if (values.viewName === "About") {
-        return ( <About /> )
+        return ( <About bgColor={values.bgColor} /> )
 
     } else if (values.viewName === "Projects") {
-        return ( <Projects /> )
+        return ( <Projects bgColor={values.bgColor}/> )
 
     } else if (values.viewName === "Articles"){
-            return ( <Articles /> )
+            return ( <Articles bgColor={values.bgColor}/> )
     }
 }
 

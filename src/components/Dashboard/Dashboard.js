@@ -70,13 +70,25 @@ function Dashboard() {
         )
     //Expand Views
     } else if (values.viewName === "About") {
-        return ( <About bgColor={values.bgColor} /> )
+        return ( 
+            <div className="Dashboard container">
+                <About bgColor={values.bgColor} /> 
+            </div>
+        )
 
     } else if (values.viewName === "Projects") {
-        return ( <Projects bgColor={values.bgColor}/> )
+        return (
+            <div className="Dashboard container">
+                <Projects bgColor={values.bgColor} /> 
+            </div>
+        )
 
     } else if (values.viewName === "Articles"){
-            return ( <Articles bgColor={values.bgColor}/> )
+            return ( 
+                <div className="Dashboard container">
+                    <Articles bgColor={values.bgColor} /> 
+                </div>
+            )
     }
 }
 

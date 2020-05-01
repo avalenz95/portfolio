@@ -1,10 +1,10 @@
 import React from 'react'
 
-function About() {
+function Articles() {
     console.log('I was displayed!')
     return (
-        <div>About</div>
+        <div>Articles</div>
     )
 }
 
-export default About
+export default Articles

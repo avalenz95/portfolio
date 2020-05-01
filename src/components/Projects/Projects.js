@@ -1,10 +1,10 @@
 import React from 'react'
 
-function About() {
+function Projects() {
     console.log('I was displayed!')
     return (
-        <div>About</div>
+        <div>Projects</div>
     )
 }
 
-export default About
+export default Projects

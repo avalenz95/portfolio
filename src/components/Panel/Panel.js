@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Panel.css'
-import About from '../About/About.js'
 
 
 //Represents a panel block on dashboard (about me, projects, articles)
@@ -36,15 +35,15 @@ function Panel(props) {
       }
     
 
-    /* Attempt to use a hook */
-    function handleChange(event) {
+    //Child change view values and pass to parent
+    function handleView(event) {
         console.log("here")
-        event.target.value = {showView: true, viewName: props.viewName}
-        props.onChange(event.target.value);
+        event.target.values = {showView: true, viewName: viewName}
+        props.onChange(event.target.values);
     }
 
     return (
-        <div className="panel" onClick={handleChange} style={style.panel}>
+        <div className="panel" onClick={handleView} style={style.panel}>
 
             <div className="box" style={style.box}>
 

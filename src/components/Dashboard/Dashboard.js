@@ -16,6 +16,7 @@ function Dashboard() {
         console.log(newValues)
     }
 
+    //Default Dashboard
     if (values.showView === false) {
         return (
             <div className="Dashboard container">
@@ -64,6 +65,7 @@ function Dashboard() {
     
             </div>
         )
+    //Expand Views
     } else if (values.viewName === "About") {
         return ( <About /> )
 

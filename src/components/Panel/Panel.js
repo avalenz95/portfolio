@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Panel.css'
+import About from '../About/About.js'
+
 
 //Represents a panel block on dashboard (about me, projects, articles)
 function Panel(props) {
-    const { title, description, bgColor, image} = props
+    const { title, description, bgColor, image, viewName} = props
 
     const style = {
         panel: {
@@ -32,10 +34,17 @@ function Panel(props) {
         },
 
       }
+    
 
+    /* Attempt to use a hook */
+    function handleChange(event) {
+        console.log("here")
+        event.target.value = {showView: true, viewName: props.viewName}
+        props.onChange(event.target.value);
+    }
 
     return (
-        <div className="panel" style={style.panel}>
+        <div className="panel" onClick={handleChange} style={style.panel}>
 
             <div className="box" style={style.box}>
 

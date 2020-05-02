@@ -1,4 +1,4 @@
-
+/* Box Shadow */
 .panel {
     box-shadow: 0px 0px 0px 0px #030100;
     transition: box-shadow 0.6s linear;
@@ -13,6 +13,7 @@
     color: white;
 }
 
+/* Underline */
 h1 {
     color: #fff;
     text-decoration: none;

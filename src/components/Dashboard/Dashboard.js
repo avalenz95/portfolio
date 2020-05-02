@@ -29,7 +29,7 @@ function Dashboard() {
                     <div className="column is-one-quarter">
                         <Panel 
                             title="About Me"
-                            bgColor = 'rgb(251,136,105,.5)'
+                            bgColor = 'rgb(187,61,32, .8)'
                             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                             image = {`${process.env.PUBLIC_URL}/images/me.jpeg`}
                             /* Pass callback to child */
@@ -43,7 +43,7 @@ function Dashboard() {
                     <div className="column is-three-quarters">
                         <Panel 
                             title="Projects"
-                            bgColor = 'rgb(105,251,136)'
+                            bgColor = 'rgb(23,134,68)'
                             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                             viewName="Projects"
                             values={values}
@@ -57,7 +57,7 @@ function Dashboard() {
                     <div className="column is-full">
                         <Panel 
                             title="Articles"
-                            bgColor = 'rgb(105,220,251)'
+                            bgColor = 'rgb(24,89,118)'
                             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                             viewName="Articles"
                             values={values}
@@ -72,7 +72,7 @@ function Dashboard() {
     } else if (values.viewName === "About") {
         return ( 
             <div className="Dashboard container">
-                <About bgColor={values.bgColor} /> 
+                <About bgColor="rgb(187,61,32)" /> 
             </div>
         )
 

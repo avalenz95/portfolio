@@ -4,7 +4,7 @@ import './Panel.css'
 
 //Represents a panel block on dashboard (about me, projects, articles)
 function Panel(props) {
-    const { title, description, bgColor, image, viewName} = props
+    const { title, description, bgColor, image} = props
 
     const style = {
         panel: {

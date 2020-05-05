@@ -6,6 +6,7 @@ import Nav from './components/Nav/Nav.js'
 import { HashRouter as Router, Route } from 'react-router-dom'
 import Articles from './components/Articles/Articles.js'
 import About from './components/About/About.js'
+import './components/About/About.css'
 import Projects from './components/Projects/Projects.js'
 
 

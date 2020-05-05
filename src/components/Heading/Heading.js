@@ -20,13 +20,13 @@ function Heading(props) {
     }
 
     return(
-        <div class="columns">
-                <div class="column is-four-fifths">
-                    <h1 class="title is-1" style={style.h1}>
+        <div className="columns">
+                <div className="column is-four-fifths">
+                    <h1 className="title is-1" style={style.h1}>
                         {name}
                     </h1>
                 </div>
-                <div class="column">
+                <div className="column">
                     <a className="button is-large" style={style.button} href="#">
                         <span className="icon is-large">
                             <img className="is-rounded" src={`${process.env.PUBLIC_URL}icons/chevron-back-icon.svg`} alt="return"/>

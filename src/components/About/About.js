@@ -2,13 +2,12 @@ import React from 'react'
 import Heading from '../Heading/Heading.js'
 import './About.css'
 
-function About(props) {
-    const {bgColor} = props
+function About() {
 
     const style = {
         box: {
             height: '100%',
-            backgroundColor: bgColor,
+            backgroundColor: 'rgb(187,61,32, .8)',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
@@ -27,64 +26,67 @@ function About(props) {
     const {box, section, text} = style
 
     return (
-        <div className="box" style={box}>
-            <Heading name="About Me"/>
 
-            <div class="columns">
-                <div class="box" style={section}>
-                    <div class="column is-three-quarters">
-                        <p class="title is-3" style={text} >
-                            My Background
-                        </p>
-                        
-                        <p class="subtitle is-5" style={text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                        </p>
-                    </div>
+        <div className="Dashboard container">
+            <div className="box" style={box}>
+                <Heading name="About Me"/>
 
-                    <div class="column is-one-quarter" style={text}>
+                <div class="columns">
+                    <div class="box" style={section}>
+                        <div class="column is-three-quarters">
+                            <p class="title is-3" style={text} >
+                                My Background
+                            </p>
+                            
+                            <p class="subtitle is-5" style={text}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
 
-                    </div>
-                </div>
-            </div>
-            <br></br>
-            <div class="columns">
-                <div class="box" style={section}>
-                    <div class="column is-three-quarters">  
-                        <p class="subtitle is-5" style={text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                        </p>
+                        <div class="column is-one-quarter" style={text}>
 
-                    </div>
-
-                    <div class="column is-one-quarter">
-                        <p class="title is-3" style={text}>
-                            My Experience
-                        </p>
+                        </div>
                     </div>
                 </div>
+                <br></br>
+                <div class="columns">
+                    <div class="box" style={section}>
+                        <div class="column is-three-quarters">  
+                            <p class="subtitle is-5" style={text}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
 
-            </div>
-            <br></br>
-            <div class="columns">
-                <div class="box" style={section}>
-                    <div class="column is-three-quarters">
-                        <p class="title is-3" style={text}>
-                            My Ambitions
-                        </p>
-                        
-                        <p class="subtitle is-5" style={text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                        </p>
+                        </div>
+
+                        <div class="column is-one-quarter">
+                            <p class="title is-3" style={text}>
+                                My Experience
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="column is-one-quarter" style={text}>
+                </div>
+                <br></br>
+                <div class="columns">
+                    <div class="box" style={section}>
+                        <div class="column is-three-quarters">
+                            <p class="title is-3" style={text}>
+                                My Ambitions
+                            </p>
+                            
+                            <p class="subtitle is-5" style={text}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
 
+                        <div class="column is-one-quarter" style={text}>
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     )
 }

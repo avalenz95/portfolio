@@ -1,5 +1,6 @@
 import React from 'react'
 import Badge from '../Badge/Badge.js'
+import { Link } from 'react-router-dom'
 
 function Heading(props) {
     const {name} = props
@@ -27,11 +28,13 @@ function Heading(props) {
                     </h1>
                 </div>
                 <div className="column">
-                    <a className="button is-large" style={style.button} href="#">
-                        <span className="icon is-large">
-                            <img className="is-rounded" src={`${process.env.PUBLIC_URL}icons/chevron-back-icon.svg`} alt="return"/>
-                        </span>
-                    </a>
+                    <Link to="/" style={style.button}>
+                        <button className="button is-large" style={style.button} href="#">
+                            <span className="icon is-large">
+                                <img className="is-rounded" src={`${process.env.PUBLIC_URL}icons/chevron-back-icon.svg`} alt="return"/>
+                            </span>
+                        </button>
+                    </Link>
                 </div>
         </div>
     )

@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Panel from '../Panel/Panel.js'
-import About from '../About/About.js'
-import Projects from '../Projects/Projects.js'
-import Articles from '../Articles/Articles.js'
 import { Link } from 'react-router-dom'
-
+import { motion } from "framer-motion"
 //Represents homepage grid
 function Dashboard() {
 
@@ -23,11 +20,17 @@ function Dashboard() {
     //Default Dashboard
     return (
         <div className="Dashboard container">
+             <motion.div
+                className="thumbnails"
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
+            >
             <div className="columns">
 
                 {/* About Me */}
                 <div className="column is-one-quarter">
-                    <Link to={'/About'}>
                         <Panel 
                             title="About Me"
                             bgColor = 'rgb(187,61,32, .8)'
@@ -38,36 +41,39 @@ function Dashboard() {
                             //values={values}
                             //onChange={handleView}
                         />
-                    </Link>
                 </div>
 
                 {/* Projects */}
                 <div className="column is-three-quarters">
-                    <Panel 
-                        title="Projects"
-                        bgColor = 'rgb(23,134,68)'
-                        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
-                        viewName="Projects"
-                        //values={values}
-                        //onChange={handleView}
-                    />
+                    <Link to={'/Projects'}>
+                        <Panel 
+                            title="Projects"
+                            bgColor = 'rgb(23,134,68)'
+                            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
+                            viewName="Projects"
+                            //values={values}
+                            //onChange={handleView}
+                        />
+                    </Link>
                 </div>
             </div>
 
             {/* Articles */}
             <div className="columns">
                 <div className="column is-full">
-                    <Panel 
-                        title="Articles"
-                        bgColor = 'rgb(24,89,118)'
-                        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
-                        viewName="Articles"
-                        //values={values}
-                        //onChange={handleView}
-                    />
+                    <Link to={'/Articles'}>
+                        <Panel 
+                            title="Articles"
+                            bgColor = 'rgb(24,89,118)'
+                            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
+                            viewName="Articles"
+                            //values={values}
+                            //onChange={handleView}
+                        />
+                    </Link>
                 </div>
             </div>
-
+            </motion.div>
         </div>
     )
 //Expand Views

@@ -1,5 +1,5 @@
 import React from 'react'
-import Badge from '../Badge/Badge.js'
+//import Badge from '../Badge/Badge.js'
 import { Link } from 'react-router-dom'
 
 function Heading(props) {

@@ -10,6 +10,7 @@
     "framer-motion": "^1.10.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-particles-js": "^3.2.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
@@ -39,6 +40,6 @@
   "devDependencies": {
     "bulma": "^0.8.2",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.14.0"
+    "node-sass": "^4.14.1"
   }
 }

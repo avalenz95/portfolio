@@ -8,11 +8,14 @@ import Articles from './components/Articles/Articles.js'
 import About from './components/About/About.js'
 import './components/About/About.css'
 import Projects from './components/Projects/Projects.js'
-
 import { AnimatePresence } from "framer-motion";
+import Background from './components/Background/Background'
+
+
 function App() {
   return (
     <Router>
+      <Background />
       <div className="App">
         <Nav />
         <Route render={({ location }) => (

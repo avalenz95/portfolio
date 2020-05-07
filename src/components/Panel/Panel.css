@@ -71,3 +71,31 @@ h1:after {
     color: 'white';
     grid-area: t;
 }
+
+.panel > div:nth-child(1) {
+    background-color: #97edab
+  }
+  
+  .panel > div:nth-child(2) {
+    background-color: #e5db8e
+  }
+  
+  .panel > div:nth-child(3) {
+    background-color: #97dced
+  }
+  
+  .panel > div:nth-child(4) {
+    background-color: #97a1ed
+  }
+  
+  .panel > div:nth-child(5) {
+    background-color: #b597ed
+  }
+  
+  .panel > div:nth-child(6) {
+    background-color: #ed979e
+  }
+  
+  .panel > div:nth-child(7) {
+    background-color: #ed979e
+  }

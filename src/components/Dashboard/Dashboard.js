@@ -6,14 +6,7 @@ import './Dashboard.css'
 function Dashboard() {
 
     return (
-        <div className="wrapper">
-             <motion.div
-                className="thumbnails"
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-            >
+        <div className="dashboard">
 
             {/* About Me */}
             <div className="about">
@@ -21,7 +14,7 @@ function Dashboard() {
                         title="About Me"
                         bgColor = 'rgb(187,61,32, .8)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
-                        image = {`${process.env.PUBLIC_URL}/images/me.jpeg`}
+                        //image = {`${process.env.PUBLIC_URL}/images/me.jpeg`}
                         /* Pass callback to child */
                         viewName="About"
                         //values={values}
@@ -52,6 +45,15 @@ function Dashboard() {
                         //onChange={handleView}
                     />
             </div>
+
+            <motion.div
+                className="thumbnails"
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
+            >
+
             </motion.div>
         </div>
     )

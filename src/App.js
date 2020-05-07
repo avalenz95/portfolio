@@ -1,8 +1,6 @@
 import React from 'react'
 import './App.css'
 import Dashboard from './components/Dashboard/Dashboard.js'
-import Footer from './components/Footer/Footer.js'
-import Nav from './components/Nav/Nav.js'
 import { HashRouter as Router, Route, Switch} from 'react-router-dom'
 import Articles from './components/Articles/Articles.js'
 import About from './components/About/About.js'
@@ -15,7 +13,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
         <Route render={({ location }) => (
           <AnimatePresence exitBeforeEnter initial={false}>
             <Switch location={location} key={location.pathname}>
@@ -26,7 +23,6 @@ function App() {
             </Switch>
           </AnimatePresence>
         )} />
-        <Footer />
       </div>
     </Router>
   )

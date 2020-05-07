@@ -2,7 +2,7 @@ import React from 'react'
 //import Badge from '../Badge/Badge.js'
 import { Link } from 'react-router-dom'
 import { motion } from "framer-motion";
-
+import "./Heading.css"
 const transition = {
     duration: 1,
     ease: [0.43, 0.13, 0.23, 0.96]

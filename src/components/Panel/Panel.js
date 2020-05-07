@@ -74,10 +74,10 @@ function Panel(props) {
                 variants={frameVariants}
                 transition={transition}
              >
-                <Link to={`/${viewName}`}>
+
                     <div className="panel" style={style.panel}>
                         <div className="box" style={style.box}>
-
+                        <Link to={`/${viewName}`}>
                             <div className="desc" style={style.desc}>
                                 <p>{description}</p>
                             </div>
@@ -85,10 +85,9 @@ function Panel(props) {
                             <div className="title" style={style.title}>
                                 <h1> {title} </h1>
                             </div>
-
+                            </Link>
                         </div>
                     </div>
-                </Link>
             </motion.div>
 
         </motion.div>

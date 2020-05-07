@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 //Represents homepage grid
 function Dashboard() {
 
+    
    /* // set view states
     const[values, setValue] = useState({
         showView: false, 

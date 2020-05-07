@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.sass'
+import './App.css'
 import Dashboard from './components/Dashboard/Dashboard.js'
 import Footer from './components/Footer/Footer.js'
 import Nav from './components/Nav/Nav.js'
@@ -9,13 +9,11 @@ import About from './components/About/About.js'
 import './components/About/About.css'
 import Projects from './components/Projects/Projects.js'
 import { AnimatePresence } from "framer-motion";
-import Background from './components/Background/Background'
 
 
 function App() {
   return (
     <Router>
-      <Background />
       <div className="App">
         <Nav />
         <Route render={({ location }) => (

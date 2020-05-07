@@ -5,19 +5,7 @@ import { motion } from "framer-motion"
 import './Dashboard.css'
 //Represents homepage grid
 function Dashboard() {
-   /* // set view states
-    const[values, setValue] = useState({
-        showView: false, 
-        viewName: "",
-        bgColor: "",
-    })
-    
-    //Handle changing the view values
-    function handleView(newValues) {
-        setValue(newValues)
-    }*/
 
-    //Default Dashboard
     return (
         <div className="wrapper">
              <motion.div
@@ -72,29 +60,6 @@ function Dashboard() {
             </motion.div>
         </div>
     )
-//Expand Views
-} /*else if (values.viewName === "About") {
-    return ( 
-        <div className="Dashboard container">
-            <About bgColor="rgb(187,61,32)" /> 
-        </div>
-    )
-
-} else if (values.viewName === "Projects") {
-    return (
-        <div className="Dashboard container">
-            <Projects bgColor={values.bgColor} /> 
-        </div>
-    )
-
-} else if (values.viewName === "Articles"){
-        return ( 
-            <div className="Dashboard container">
-                <Articles bgColor={values.bgColor} /> 
-            </div>
-        )
 }
-}*/
-
 
 export default Dashboard

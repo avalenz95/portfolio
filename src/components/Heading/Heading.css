@@ -1,0 +1,33 @@
+.title {
+    grid-area: t;
+}
+.title h1{
+    color: white;
+}
+
+.return {
+    grid-area: r;
+}
+.return button{
+    background-color: transparent;
+    border: none;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas:  "t t t r";
+}
+
+.wrapper > div {
+    color: white;
+    font-family: Helvetica;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -3,7 +3,28 @@
     box-shadow: 0px 0px 0px 0px #030100;
     transition: box-shadow 0.6s linear;
     margin: 0.5em;
+    background-size: 'cover';
+    height: '100%';
+
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* The named areas below define where elements with
+    those names are placed on the grid. */
+    grid-template-areas:  "d d d d" 
+                          "t t    ";
 }
+
+.panel > div {
+    color: white;
+    font-family: Helvetica;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .panel:hover {
     box-shadow: 0px 0px 0px 5px #030100;
@@ -38,4 +59,15 @@ h1:after {
 .panel:hover h1:after { 
     width: 100%; 
     left: 0; 
+}
+
+.description {
+    grid-area: d;
+}
+
+
+.title {
+    font-size: '30px';
+    color: 'white';
+    grid-area: t;
 }

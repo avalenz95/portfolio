@@ -1,6 +1,5 @@
 import React from 'react'
 import Panel from '../Panel/Panel.js'
-import { Link } from 'react-router-dom'
 import { motion } from "framer-motion"
 import './Dashboard.css'
 //Represents homepage grid
@@ -32,7 +31,6 @@ function Dashboard() {
 
             {/* Projects */}
             <div className="projects">
-                <Link to={'/Projects'}>
                     <Panel 
                         title="Projects"
                         bgColor = 'rgb(23,134,68)'
@@ -41,12 +39,10 @@ function Dashboard() {
                         //values={values}
                         //onChange={handleView}
                     />
-                </Link>
             </div>
 
             {/* Articles */}
             <div className="articles">
-                <Link to={'/Articles'}>
                     <Panel 
                         title="Articles"
                         bgColor = 'rgb(24,89,118)'
@@ -55,7 +51,6 @@ function Dashboard() {
                         //values={values}
                         //onChange={handleView}
                     />
-                </Link>
             </div>
             </motion.div>
         </div>

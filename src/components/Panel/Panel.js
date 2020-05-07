@@ -25,46 +25,13 @@ function Panel(props) {
     const { title, description, bgColor, image, viewName} = props
 
     const style = {
-        panel: {
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            height: '100%',
-        },
-
-        box: {
-            height: '100%',
-            backgroundColor: bgColor,
-            color: 'white',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-        },
-
-        title: {
-            fontSize: '30px',
-            color: 'white',
-
-        },
-
-        desc: {
-
-        },
-
-      }
-    
-
-    //Child change view values and pass to parent
-    /*function handleView(event) {
-        event.target.values = {
-            showView: true, 
-            viewName: viewName, 
-            bgColor: bgColor
+        panel: {backgroundImage: `url(${image})`,
+        backgroundColor: bgColor,
+        height: '100%',
+        color: 'white',
         }
-        
-        props.onChange(event.target.values);
     }
 
-    onClick={handleView}*/
 
     return (
         <motion.div variants={variants}>
@@ -74,22 +41,17 @@ function Panel(props) {
                 variants={frameVariants}
                 transition={transition}
              >
-
+                 <Link to={`/${viewName}`}></Link>
                     <div className="panel" style={style.panel}>
-                        <div className="box" style={style.box}>
-                        <Link to={`/${viewName}`}>
-                            <div className="desc" style={style.desc}>
+                            <div className="desc">
                                 <p>{description}</p>
                             </div>
 
-                            <div className="title" style={style.title}>
+                            <div className="title">
                                 <h1> {title} </h1>
                             </div>
-                            </Link>
-                        </div>
                     </div>
             </motion.div>
-
         </motion.div>
 
     )

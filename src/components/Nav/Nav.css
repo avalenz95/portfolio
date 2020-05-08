@@ -8,4 +8,7 @@
 
 .icons{
     justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:  "i i i i";
 }

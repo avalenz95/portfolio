@@ -4,7 +4,8 @@
     transition: box-shadow 0.6s linear;
     background-repeat: no-repeat;
     opacity: .8;
-    background-size: cover;
+    background-size:  cover;
+    background-position: center;
     background-blend-mode: multiply;
     border-radius: 15px;
     padding: 7%;
@@ -20,7 +21,6 @@
                           "t t t t";
 
 }
-
 
 .panel:hover {
     box-shadow: 0px 0px 0px 5px white;
@@ -59,6 +59,7 @@ h1:after {
 
 .description {
     grid-area: d;
+    z-index:5;
 }
 
 
@@ -66,4 +67,5 @@ h1:after {
     font-size: '30px';
     color: 'white';
     grid-area: t;
+    z-index: 5;
 }

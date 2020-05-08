@@ -4,30 +4,40 @@
     grid-template-columns: repeat(6, 1fr);
     border-radius: 15px;
     grid-template-areas:  "a a p p p p" 
-                          "r r r r r d";
+                          "r r r r d d";
 }
 
 
 .about {
     display: flex;
     height: 100%;
+    width: 100%;
     grid-area: a;
 }
 
 .projects {
     display: flex;
     height: 100%;
+    width: 100%;
     grid-area: p;
+}
+
+.projects .panel {
+    background-blend-mode: color-burn, hard-light ;
+    background-position: bottom;
+    background-size: contain;
 }
 
 .articles {
     display: flex;
     height: 100%;
+    width: 100%;
     grid-area: r;
 }
 
 .diy {
     display: flex;
     height: 100%;
+    width: 100%;
     grid-area: d;
 }

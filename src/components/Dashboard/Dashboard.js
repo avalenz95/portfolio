@@ -25,6 +25,7 @@ function Dashboard() {
                         title="Projects"
                         bgColor = 'rgb(23,134,68, .9)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
+                        image = {`${process.env.PUBLIC_URL}/images/streak.svg`}
                         viewName="Projects"
                     />
             </div>

@@ -1,25 +1,24 @@
 .dashboard {
     display: grid;
-    height: inherit;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
     border-radius: 15px;
-    grid-template-areas:  "a a p p" 
-                          "r r r r";
+    grid-template-areas:  "a a p p p p" 
+                          "r r r r r r";
 }
 
 
 .about {
     display: flex;
+    height: 100%;
     grid-area: a;
 }
 
 .projects {
-    display: flex;
     grid-area: p;
 }
 
 .articles {
+    width: inherit;
     grid-area: r;
 }

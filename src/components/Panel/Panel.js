@@ -1,7 +1,16 @@
 import React, {useState} from 'react'
 import './Panel.css'
 import { Redirect } from "react-router-dom";
+import { motion } from "framer-motion";
 
+//Effects
+const animations={
+    scale: [0, 1],
+}
+const transitions={ 
+    ease: "easeIn",
+    duration: 1.5
+}
 
 //Represents a panel block on dashboard (about me, projects, articles)
 function Panel(props) {
@@ -21,15 +30,16 @@ function Panel(props) {
     }
 
     return (
-            <div className="panel" onClick={redirect} style={style.panel}>
+
+            <motion.div className="panel" onClick={redirect} style={style.panel} animate={animations} transition={transitions} exit={{ opacity: 0 }}>
                 {toView ? <Redirect push to={`/${viewName}`}/> : null}
-                            <div className="description">
-                                <p>{description}</p>
-                            </div>
-                            <div className="title">
-                                <h1> {title} </h1>
-                            </div>
-            </div>
+                <div className="description">
+                    <p>{description}</p>
+                </div>
+                <div className="title">
+                    <h1> {title} </h1>
+                </div>
+            </motion.div>
     )
 }
 

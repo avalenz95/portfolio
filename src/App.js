@@ -7,12 +7,16 @@ import About from './components/About/About.js'
 import './components/About/About.css'
 import Projects from './components/Projects/Projects.js'
 import { AnimatePresence } from "framer-motion";
+import ParticlesBg from 'particles-bg'
 
 
 function App() {
+  
+  
   return (
     <Router>
       <div className="App">
+      
         <Route render={({ location }) => (
           <AnimatePresence exitBeforeEnter initial={false}>
             <Switch location={location} key={location.pathname}>
@@ -23,6 +27,7 @@ function App() {
             </Switch>
           </AnimatePresence>
         )} />
+        <ParticlesBg type="thick" color="#000000" bg={true} />
       </div>
     </Router>
   )

@@ -26,7 +26,7 @@ function Dashboard() {
             <div className="projects">
                     <Panel 
                         title="Projects"
-                        bgColor = 'rgb(23,134,68)'
+                        bgColor = 'rgb(23,134,68, .9)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                         viewName="Projects"
                         //values={values}
@@ -38,7 +38,7 @@ function Dashboard() {
             <div className="articles">
                     <Panel 
                         title="Articles"
-                        bgColor = 'rgb(24,89,118)'
+                        bgColor = 'rgb(24,89,118, .9)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                         viewName="Articles"
                         //values={values}

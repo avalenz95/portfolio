@@ -15,10 +15,7 @@ function Dashboard() {
                         bgColor = 'rgb(187,61,32, .8)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                         image = {`${process.env.PUBLIC_URL}/images/me.jpeg`}
-                        /* Pass callback to child */
                         viewName="About"
-                        //values={values}
-                        //onChange={handleView}
                     />
             </div>
 
@@ -29,8 +26,6 @@ function Dashboard() {
                         bgColor = 'rgb(23,134,68, .9)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                         viewName="Projects"
-                        //values={values}
-                        //onChange={handleView}
                     />
             </div>
 
@@ -41,8 +36,17 @@ function Dashboard() {
                         bgColor = 'rgb(24,89,118, .9)'
                         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
                         viewName="Articles"
-                        //values={values}
-                        //onChange={handleView}
+
+                    />
+            </div>
+
+            {/* DIY */}
+            <div className="diy">
+                    <Panel 
+                        title="DIY"
+                        bgColor = 'rgb(255,135,0, .9)'
+                        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis."
+                        viewName="DIY"
                     />
             </div>
             

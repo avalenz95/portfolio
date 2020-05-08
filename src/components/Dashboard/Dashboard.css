@@ -4,7 +4,7 @@
     grid-template-columns: repeat(6, 1fr);
     border-radius: 15px;
     grid-template-areas:  "a a p p p p" 
-                          "r r r r r r";
+                          "r r r r r d";
 }
 
 
@@ -19,6 +19,11 @@
 }
 
 .articles {
-    width: inherit;
+    display: flex;
+    height: 100%;
     grid-area: r;
+}
+
+.diy {
+    grid-area: d;
 }

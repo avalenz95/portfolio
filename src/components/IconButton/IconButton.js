@@ -1,17 +1,23 @@
 import React from 'react'
 import './IconButton.css'
-// eslint-disable-next-line no-lone-blocks
-{/* FIGURE OUT HOW TO CHANGE SVG COLOR maybe create css file? */}
+import { motion } from "framer-motion";
+
 function IconButton(props) {
 
     const { name, location, alt, href} = props
 
     return (
-        <button class="iconbutton" onclick={`window.location.href = ${href};`}>
+
+        <motion.button className="iconbutton"
+            onClick={() =>  window.open(href)} 
+            animate={{scale: [0, 1] }} 
+            transitions={{ ease: "easeIn", duration: 3}} 
+            whileHover={{ scale: 1.3, rotate: 360, duration: 10 }}
+        >
             <img src={`${process.env.PUBLIC_URL}${location}`} alt={alt}/>
             {/* Render only if name exists */}
             {name ? <span>{name}</span> : ''}
-        </button>
+        </motion.button>
     )
 }
 

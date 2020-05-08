@@ -1,6 +1,7 @@
 import React from 'react'
 import IconButton from '../IconButton/IconButton.js'
 import './Nav.css'
+import { motion } from "framer-motion";
 function Nav() {
 
     return (
@@ -8,7 +9,7 @@ function Nav() {
             <div className="name">
                 <h1>ABlades.DEV</h1>
             </div>
-                <div className="icons">
+                <motion.div className="icons" transition={{staggerChildren: 0.5}}>
                     <IconButton
                         location = "icons/medium-icon.svg"
                         alt = "medium"
@@ -35,7 +36,7 @@ function Nav() {
                         name = "Resume"
                     />
 
-                </div>
+                </motion.div>
         </nav>
 
     )

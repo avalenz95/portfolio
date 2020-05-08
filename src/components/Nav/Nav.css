@@ -1,0 +1,11 @@
+.navbar{
+    display: grid;
+    align-items: center;
+    margin: 2%;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-gap: 20px;
+}
+
+.icons{
+    justify-self: end;
+}

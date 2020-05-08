@@ -6,8 +6,9 @@ import Articles from './components/Articles/Articles.js'
 import About from './components/About/About.js'
 import './components/About/About.css'
 import Projects from './components/Projects/Projects.js'
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion"
 import ParticlesBg from 'particles-bg'
+import Nav from './components/Nav/Nav.js'
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      
+        <Nav />
         <Route render={({ location }) => (
           <AnimatePresence exitBeforeEnter initial={false}>
             <Switch location={location} key={location.pathname}>

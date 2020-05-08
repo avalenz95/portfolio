@@ -27,7 +27,7 @@ function App() {
             </Switch>
           </AnimatePresence>
         )} />
-        <ParticlesBg type="thick" color="#000000" bg={true} />
+        <ParticlesBg type="thick" num={15} color={"#000000"} bg={true} />
       </div>
     </Router>
   )

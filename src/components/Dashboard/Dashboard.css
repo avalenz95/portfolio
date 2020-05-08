@@ -1,21 +1,22 @@
 .dashboard {
     display: grid;
-    row-gap: 3%;
-    column-gap: 1%;
     height: inherit;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     border-radius: 15px;
-    grid-template-areas:  "a p p p" 
+    grid-template-areas:  "a a p p" 
                           "r r r r";
 }
 
 
 .about {
+    display: flex;
     grid-area: a;
 }
 
 .projects {
+    display: flex;
     grid-area: p;
 }
 

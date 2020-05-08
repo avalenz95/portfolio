@@ -21,7 +21,7 @@
     border-radius: 15px;
     color: white;
     grid-template-areas:  "d d d d" 
-                          "t t t .";
+                          "t t t t";
 
 }
 

@@ -9,17 +9,25 @@
     border-radius: 15px;
     width: inherit;
     height: inherit;
+    padding: 50px;
+    font-family: Helvetica;
+    margin: 1em;
+    align-items: center;
+    display: grid;
+    grid-gap: 30px;
+    width: inherit;
+    height: inherit;
+    grid-template-columns: repeat(4, 1fr);   
+    border-radius: 15px;
+    color: white;
+    grid-template-areas:  "d d d d" 
+                          "t t t .";
 
 }
 
-.panel > div {
-    color: white;
-    font-family: Helvetica;
-    align-items: center;
-  }
 
 .panel:hover {
-    box-shadow: 0px 0px 0px 5px #030100;
+    box-shadow: 0px 0px 0px 5px white;
 }
 
 .panel:hover .title h1{
@@ -34,24 +42,6 @@ h1 {
     position: relative;
 }
 
-.box {
-    all: unset;
-    position: relative;
-    top:-18px;
-    left: -15px;
-    padding: 20px;
-    font-family: Helvetica;
-    margin: 1em;
-    align-items: center;
-    display: grid;
-    grid-gap: 10px;
-    width: inherit;
-    height: inherit;
-    grid-template-columns: repeat(4, 1fr);   
-    border-radius: 15px;
-    grid-template-areas:  "d d d d" 
-                          "t t t .";
-}
 h1:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;

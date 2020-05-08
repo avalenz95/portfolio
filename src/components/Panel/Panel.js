@@ -15,15 +15,13 @@ function Panel(props) {
 
     return (
             <div className="panel" style={style.panel}>
-                <Link className="box" to={`/${viewName}`}>
-                        <div className="description">
-                            <p>{description}</p>
-                        </div>
+                            <div className="description">
+                                <p>{description}</p>
+                            </div>
 
-                        <div className="title">
-                            <h1> {title} </h1>
-                        </div>
-                </Link>
+                            <div className="title">
+                                <h1> {title} </h1>
+                            </div>
             </div>
     )
 }

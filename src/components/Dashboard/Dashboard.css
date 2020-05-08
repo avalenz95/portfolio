@@ -1,20 +1,15 @@
 .dashboard {
     display: grid;
-    grid-gap: 10px;
-    width: inherit;
+    row-gap: 3%;
+    column-gap: 1%;
     height: inherit;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);   
     border-radius: 15px;
     grid-template-areas:  "a p p p" 
                           "r r r r";
 }
 
-.dashboard > div{
-    display: flex;
-    height: inherit;
-    width: inherit;
-    align-items: center;
-}
 
 .about {
     grid-area: a;

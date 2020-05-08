@@ -45,7 +45,7 @@ function Dashboard() {
                         //onChange={handleView}
                     />
             </div>
-
+            
             <motion.div
                 className="thumbnails"
                 initial="initial"

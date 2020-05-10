@@ -23,6 +23,10 @@
     grid-area: p;
 }
 
+.panel {
+    width: inherit;
+}
+
 .projects .panel {
     background-blend-mode: color-burn, hard-light ;
     background-position: bottom;
@@ -35,6 +39,7 @@
     width: 100%;
     grid-area: r;
 }
+
 
 .diy {
     display: flex;

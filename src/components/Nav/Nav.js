@@ -32,8 +32,8 @@ function Nav() {
                     <IconButton
                         location = "icons/resume-icon.svg"
                         alt = "resume"
-                        href = ""
-                        name = "Resume"
+                        href ={`${process.env.PUBLIC_URL}resume.pdf`}
+                        name = "resume"
                     />
 
                 </motion.div>

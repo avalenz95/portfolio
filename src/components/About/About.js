@@ -44,8 +44,7 @@ function About() {
 
     return (
 
-        <div className="Dashboard container">
-            <motion.div className="single" initial="exit" animate="enter" exit="exit" variants={variants}>
+            <motion.div className="container" initial="exit" animate="enter" exit="exit" variants={variants}>
                 <div className="box" style={box}>
                     <Heading name="About Me"/>
 
@@ -106,7 +105,6 @@ function About() {
 
                 </div>
             </motion.div>
-        </div>
     )
 }
 

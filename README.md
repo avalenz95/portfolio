@@ -1,2 +1,8 @@
 # ABlades Portfolio
-## Displays all my work
+
+## Tools
+
+- React
+- Javascript
+- CSS Grid
+- HTML

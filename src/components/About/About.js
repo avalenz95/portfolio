@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const transition = {
     duration: 1,
     ease: [0.43, 0.13, 0.23, 0.96]
-  };
+  }
   
   const variants = {
     exit: { y: "50%", opacity: 0, transition },
@@ -16,7 +16,7 @@ const transition = {
       opacity: 1,
       transition
     }
-  };
+  }
   
 
 function About() {

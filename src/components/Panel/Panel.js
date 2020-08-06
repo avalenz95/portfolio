@@ -38,6 +38,7 @@ function Panel(props) {
                 </div>
                 <div className="title">
                     <h1> {title} </h1>
+                    
                 </div>
             </motion.div>
     )

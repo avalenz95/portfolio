@@ -7,8 +7,8 @@ import About from './components/About/About.js'
 import './components/About/About.css'
 import Projects from './components/Projects/Projects.js'
 import { AnimatePresence } from "framer-motion"
-import ParticlesBg from 'particles-bg'
 import Nav from './components/Nav/Nav.js'
+import ParticleBackground from './components/ParticleBackground'
 
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
             </Switch>
           </AnimatePresence>
         )} />
-        <ParticlesBg type="thick" num={15} color={"#000000"} bg={true} />
       </div>
+      <ParticleBackground />
     </Router>
   )
 }

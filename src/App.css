@@ -6,8 +6,7 @@ html, body, #root, .App{
   min-height: 100%;
   width: 100%;
   position: absolute;
-  background-color: black;
-  z-index: -2;
+  z-index: 1;
 }
 
 

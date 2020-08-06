@@ -7,7 +7,7 @@ function Nav() {
     return (
         <nav className="navbar">
             <div className="name">
-                <h1>ABlades.DEV</h1>
+                <h1>Audaris 'Audi' Blades - Aspiring Software Developer </h1>
             </div>
                 <motion.div className="icons" transition={{staggerChildren: 0.5}}>
                     <IconButton

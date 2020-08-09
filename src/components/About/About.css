@@ -1,3 +1,15 @@
-p {
+
+
+.container {
     color: white;
+    border-radius: 15px;
+    background-color: rgb(187,61,32, .8);
+}
+
+h1 {
+    margin-left: 4.7%;
+}
+
+p {
+    margin-left: 4.7%;
 }

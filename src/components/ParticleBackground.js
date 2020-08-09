@@ -7,20 +7,24 @@ function ParticleBackground() {
         <div
             style={{
                 position: "absolute",
-                top: 0,
-                left: 0,
                 width: "100%",
                 height: "100%",
+                top:0,
+                bottom:0,
+                left:0,
+                right:0,
+                overflow: "hidden",
                 zIndex: 0,
                 backgroundColor: "black",
             }}
         
         >
-            <Particles
+            <Particles 
+                height={window.outerHeight}
                 params={{
                     "particles": {
                         "number": {
-                            "value": 70
+                            "value": 100
                         },
                         "size": {
                             "value": 4

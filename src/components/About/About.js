@@ -23,7 +23,7 @@ function About() {
 
     return (
 
-            <motion.div className="container" initial="exit" animate="enter" exit="exit" variants={variants}>
+            <motion.div className="abt" initial="exit" animate="enter" exit="exit" variants={variants}>
                 <Heading name="About Me"/>
                     <h1>My Background...</h1>
                     <p> Hi! My name is Audaris Blades. The pronuciation probably isn't what you expect though, (Ow-Dar-Reese Blah-dez) but you can just call me Audi.</p>

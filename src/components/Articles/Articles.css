@@ -1,0 +1,29 @@
+.art {
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(24,89,118, .8);
+    padding: 1%;
+    margin: 1%;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 15px;
+    grid-template-areas:  "t t t" 
+                          "a a a"
+                          "a a a";
+
+}
+
+.heading {
+    grid-area: t;
+}
+
+h1 {
+    margin-left: 4.7%;
+}
+
+p {
+    margin-left: 4.7%;
+}

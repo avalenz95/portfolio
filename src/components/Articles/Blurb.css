@@ -1,9 +1,10 @@
-.abt {
+.blurb {
     color: white;
     border-radius: 15px;
-    background-color: rgb(187,61,32, .8);
-    padding-bottom: 5%;
-    padding-right: 5%;
+    background-color: rgb(24,89,118, .8);
+    padding: .5%;
+    margin: 1%;
+
 }
 
 h1 {

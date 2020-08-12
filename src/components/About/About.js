@@ -35,7 +35,7 @@ function About() {
 
 
                     <h1>My Ambtions...</h1>
-                    <p> As I mentioned a bit earlier I'm currently finishing up my C.S Degree going into my senior year. Right out of school I really want to be a software developer here in the Greater Nashville Area that works on creating and integrating microservices(ideally written in Golang but I'm not picky.) Into a companies infrastrcture.
+                    <p> As I mentioned a bit earlier, I'm currently finishing up my C.S. Degree going into my senior year. Right out of school, I really want to be a software developer here in the Greater Nashville Area, near all my family and friends, that works on creating and implementing Microservices (ideally written in Golang but I'm not picky) into a company's prexisting infrastrcture.
                     Why Microservices? Well I think Microservices have a lot of benefits when utilized properly. This first one that comes to mind is that microservices can help replace and speed up certain aspects of legacy hardware without requiring a full on rewrite and the disruption of many services.
                     At the end of the day though I'd be content with any sort of Software Development role where I can commit to codebase and feel like I'm contributing to some sort of end goal. I'd also like to have an application with a small size userbase that I maintain in my freetime. I think my Relevant for Reddit project has a lot of potential in that regard but we'll see.
 

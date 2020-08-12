@@ -17,6 +17,7 @@
     grid-template-columns: repeat(4, 1fr);   
     border-radius: 15px;
     color: white;
+    justify-items: start;
     grid-template-areas:  "d d d d" 
                           "t t t t";
 
@@ -60,10 +61,12 @@ h1:after {
 .description {
     grid-area: d;
     z-index:5;
+    text-align: left;
 }
 
 
 .title {
+    white-space: nowrap;
     font-size: '30px';
     color: 'white';
     grid-area: t;

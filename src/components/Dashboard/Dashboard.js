@@ -47,7 +47,7 @@ function Dashboard() {
                         title="DIY"
                         bgColor = 'rgb(255,135,0, .9)'
                         description = "This section is still under construction. (No pun intended.) This will be where I showcase the various crafts I make myself."
-                        viewName="DIY"
+                        viewName=""
                     />
             </div>
             

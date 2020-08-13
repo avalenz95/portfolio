@@ -8,7 +8,7 @@ function ParticleBackground() {
             style={{
                 position: "absolute",
                 width: "100%",
-                height: "100%",
+                height: "110%",
                 top:0,
                 bottom:0,
                 left:0,

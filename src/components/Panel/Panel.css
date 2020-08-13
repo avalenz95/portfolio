@@ -14,12 +14,12 @@
     align-items: center;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);   
+    grid-template-columns: repeat(3, 1fr);   
     border-radius: 15px;
     color: white;
     justify-items: start;
-    grid-template-areas:  "d d d d" 
-                          "t t t t";
+    grid-template-areas:  "d d d" 
+                          "t t t";
 
 }
 
@@ -37,6 +37,7 @@ h1 {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    grid-area: t;
 }
 
 h1:after {    
@@ -66,9 +67,9 @@ h1:after {
 
 
 .title {
-    white-space: nowrap;
-    font-size: '30px';
-    color: 'white';
-    grid-area: t;
+    width: 100%;
+    overflow-wrap: break-word;
+    font-size: 15px;
+    color: white;
     z-index: 5;
 }

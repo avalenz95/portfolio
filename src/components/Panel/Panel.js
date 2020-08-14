@@ -9,7 +9,7 @@ const animations={
 }
 const transitions={ 
     ease: "easeIn",
-    duration: 1.5
+    duration: 2
 }
 
 //Represents a panel block on dashboard (about me, projects, articles)

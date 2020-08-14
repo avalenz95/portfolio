@@ -1,6 +1,5 @@
 import React from 'react'
 import Panel from '../Panel/Panel.js'
-import { motion } from "framer-motion"
 import './Dashboard.css'
 //Represents homepage grid
 function Dashboard() {
@@ -50,16 +49,6 @@ function Dashboard() {
                         viewName=""
                     />
             </div>
-            
-            <motion.div
-                className="thumbnails"
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-            >
-
-            </motion.div>
         </div>
     )
 }

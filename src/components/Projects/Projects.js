@@ -28,12 +28,14 @@ function Projects() {
                 </div>
 
                 <Panel 
-                        title = "Solving Mazes"
+                        title = "Relevant - for Reddit"
                         bgColor = 'rgb(0,0,0, .8)'
-                        description = "Solving Mazes with DFS is the first big article that I've written. The article looks at the general structure of a maze and breaks down how that structure can be represented as a graph. From that point, I go through a step by step explanation showing how the algorithm works. I give an overview of adding elements to the stack, removing them and explain backtracking a bit."
-                        viewName = "https://medium.com/swlh/solving-mazes-with-depth-first-search-e315771317ae"
+                        description = "Relevant is a Google Alerts style web application designed specifically to work with Reddit. In this project I use third part auth, concurrency, custom datastructures, create an API and a lot more. I'm currently in the process of Dockerizing and getting the project ready for V1.0!"
+                        viewName = "github.com/ablades/relevantreddit"
                         link = "true"
                 />
+
+
             </motion.div>
     )
 }

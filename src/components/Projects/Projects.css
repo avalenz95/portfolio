@@ -1,4 +1,4 @@
-.art {
+.proj {
     color: white;
     background-color: rgb(24,89,118, .8);
     padding: 1%;
@@ -12,6 +12,7 @@
     grid-template-areas:  "t t" 
                           "a a"
                           "a a";
+
 }
 
 .heading {

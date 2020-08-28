@@ -2,7 +2,6 @@ import React from 'react'
 import Heading from '../Heading/Heading.js'
 import { motion } from "framer-motion"
 import './Articles.css'
-import Blurb from './Blurb.js'
 import Panel from '../Panel/Panel.js'
 
 const transition = {

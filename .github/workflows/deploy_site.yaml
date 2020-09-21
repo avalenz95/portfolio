@@ -12,4 +12,5 @@ jobs:
     # Build Website
       - name: Build
         run: |
+          npm install
           npm run deploy

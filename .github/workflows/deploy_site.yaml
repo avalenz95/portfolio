@@ -7,8 +7,12 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      # add config
+      - name: Config
+        run: |
+          git config --local user.email "audaris@gmail.com"
+          git config --local user.name "ablades"
     # Build Website
       - name: Build
         run: |

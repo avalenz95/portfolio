@@ -18,7 +18,7 @@ function Dashboard() {
                     />
             </div>
 
-            {/* Projects */}
+            { /* Projects */ }
             <div className="projects">
                     <Panel 
                         title="Projects"

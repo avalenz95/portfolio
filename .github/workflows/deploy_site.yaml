@@ -19,7 +19,9 @@ jobs:
           npm run build
 
       - name: Deploy
-        run: |
-          npm install gh-pages
-          gh-pages -d build
-          
+        uses: JamesIves/github-pages-deploy-action@3.6.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true

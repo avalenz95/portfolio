@@ -35,6 +35,14 @@ function Projects() {
                         link = "true"
                 />
 
+<Panel 
+                        title = "Portfolio Site"
+                        bgColor = 'rgb(0,0,0, .8)'
+                        description = "This website! Built using with React and third party libraries. Currently working on a CRON Job that'll pull and upload my github streak once a week."
+                        viewName = "github.com/ablades/relevantreddit"
+                        link = "true"
+                />
+
 
             </motion.div>
     )

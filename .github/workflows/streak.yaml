@@ -14,7 +14,8 @@ jobs:
 
         # fetch latest streak
         - name: Fetch Streak
-            run: ./streaktaker /public/images/streak.svg
+            run: |
+                ./streaktaker /public/images/streak.svg
         # commit streak to repo
         - name: Commit changes
         uses: EndBug/add-and-commit@v4

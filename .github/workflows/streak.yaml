@@ -1,8 +1,9 @@
 name: Streak
 
+# run once a week on saturday
 on:
     schedule:
-        - cron: "0 0 * * 1"
+        - cron: "0 0 * * 6"
 
 jobs:
     build:
@@ -11,7 +12,17 @@ jobs:
         # check out repo to github_workspace
         - uses: actions/checkout@v2
 
-        #fetch latest streak
+        # fetch latest streak
         - name: Fetch Streak
-        run: ./streaktaker
+            run: ./streaktaker /public/images/streak.svg
+        # commit streak to repo
+        - name: Commit changes
+        uses: EndBug/add-and-commit@v4
+        with:
+            author_name: ablades
+            author_email: audaris@gmail.com
+            message: "cron streak auto update: `date`"
+            add: "."
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             

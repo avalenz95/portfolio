@@ -9,20 +9,21 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-        # check out repo to github_workspace
-        - uses: actions/checkout@v2
+        - name: Checkout
+            uses: actions/checkout@v2
 
-        # fetch latest streak
-        - name: Fetch Streak
-            run: ./streaktaker /public/images/streak.svg
-        # commit streak to repo
-        - name: Commit changes
-        uses: EndBug/add-and-commit@v4
-        with:
+        - name: Install and Build
+            run: |
+                ./streaktaker /public/images/streak.svg
+
+        - name: Commit Changes
+          uses: EndBug/add-and-commit@v4
+          with:
             author_name: ablades
             author_email: audaris@gmail.com
             message: "cron streak auto update: `date`"
             add: "."
-        env:
+          env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              
             

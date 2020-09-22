@@ -1,12 +1,15 @@
-# Deployment workflow - build and redeploy website on pushes to repo
+# Deployment workflow - build and redeploy website when cron runs
 name: Build and Deploy
 on: 
-  push:
+  workflow_run:
+    workflows: ["Streak Update"]
     branches:
       - master
+    types:
+      - completed
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: macos-10.15
     steps:
       - name: Checkout
         uses: actions/checkout@v2

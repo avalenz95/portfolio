@@ -2,7 +2,8 @@ name: Streak Update
 # run once a week on saturday
 on:
   push:
-    - master
+    branches:
+      - master
   schedule:
     - cron: '*/10 * * * *'
 jobs:

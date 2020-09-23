@@ -1,6 +1,7 @@
 import React from 'react'
 import Panel from '../Panel/Panel.js'
 import './Dashboard.css'
+// import { ReactComponent as StreakSVG } from './streak.svg';
 //Represents homepage grid
 function Dashboard() {
 
@@ -24,9 +25,13 @@ function Dashboard() {
                         title="Projects"
                         bgColor = 'rgb(23,134,68, .9)'
                         description = "This section is where I showcase both my active and previous work in more detail than on github. If you'd like to learn more about specific projects click here!"
-                        image = {`${process.env.PUBLIC_URL}/images/streak.svg`}
+                        image = "./streak.svg"
                         viewName="Projects"
                     />
+                    {/*
+                    <div className="streak">
+                        <StreakSVG />
+                    </div>*/}
             </div>
 
             {/* Articles */}

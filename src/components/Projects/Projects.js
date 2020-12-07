@@ -31,7 +31,7 @@ function Projects() {
                         title = "Relevant - for Reddit"
                         bgColor = 'rgb(0,0,0, .8)'
                         description = "Relevant is a Google Alerts style web application designed specifically to work with Reddit. In this project I use third part auth, concurrency, custom datastructures, create an API and a lot more. I'm currently in the process of Dockerizing and getting the project ready for V1.0!"
-                        viewName = "github.com/ablades/relevantreddit"
+                        viewName = "https://www.github.com/ablades/relevant"
                         link = "true"
                 />
 
@@ -39,7 +39,7 @@ function Projects() {
                         title = "Portfolio Site"
                         bgColor = 'rgb(0,0,0, .8)'
                         description = "This website! Built using with React and third party libraries. Currently working on a CRON Job that'll pull and upload my github streak once a week."
-                        viewName = "github.com/ablades/relevantreddit"
+                        viewName = "https://www.github.com/ablades/portfolio"
                         link = "true"
                 />
 

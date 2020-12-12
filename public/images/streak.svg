@@ -472,7 +472,12 @@
       </g>
       <g transform="translate(728, 0)">
           <rect class="day" width="10" height="10" x="-38" y="0" fill="var(--color-calendar-graph-day-bg)" data-count="0" data-date="2020-12-06"></rect>
-          <rect class="day" width="10" height="10" x="-38" y="13" fill="var(--color-calendar-graph-day-L1-bg)" data-count="3" data-date="2020-12-07"></rect>
+          <rect class="day" width="10" height="10" x="-38" y="13" fill="var(--color-calendar-graph-day-L1-bg)" data-count="7" data-date="2020-12-07"></rect>
+          <rect class="day" width="10" height="10" x="-38" y="26" fill="var(--color-calendar-graph-day-L1-bg)" data-count="2" data-date="2020-12-08"></rect>
+          <rect class="day" width="10" height="10" x="-38" y="39" fill="var(--color-calendar-graph-day-L1-bg)" data-count="7" data-date="2020-12-09"></rect>
+          <rect class="day" width="10" height="10" x="-38" y="52" fill="var(--color-calendar-graph-day-L1-bg)" data-count="6" data-date="2020-12-10"></rect>
+          <rect class="day" width="10" height="10" x="-38" y="65" fill="var(--color-calendar-graph-day-L1-bg)" data-count="2" data-date="2020-12-11"></rect>
+          <rect class="day" width="10" height="10" x="-38" y="78" fill="var(--color-calendar-graph-day-bg)" data-count="0" data-date="2020-12-12"></rect>
       </g>
       <text x="14" y="-7" class="month">Dec</text>
       <text x="66" y="-7" class="month">Jan</text>
